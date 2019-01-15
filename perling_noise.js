@@ -10,15 +10,14 @@ function setup() {
  
 function draw() {
   var yoff = 0;
-  loadPixels ();
   for (var y = 0; y < rows; y++) {
-    var coff = 0;
+    var xoff = 0;
     for (var x = 0; x + y *cols; x++) {
       var index = (x+ y * width) * 4;
       var r = noise(xoff, yoff) * 255;
       xoff += inc;
       fill(random(255));
-      ClientRect(x * scl, y * scl, scl, slc);
+      rect(x * scl, y * scl, scl, scl);
     }
     yoff += inc;
   }
