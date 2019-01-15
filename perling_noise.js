@@ -9,7 +9,7 @@ function setup() {
 }
  
 function draw() {
-  var yofff = 0;
+  var yoff = 0;
   loadPixels ();
   for (var y = 0; y < rows; y++) {
     var coff = 0;
